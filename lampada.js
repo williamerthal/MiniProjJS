@@ -20,11 +20,12 @@ function lampOff() {
 
 function lampBroken() {
   lamp.src = "./img/lamp_quebrada.jpg";
+  //  console.log("lâmpada quebrou");
 }
 
 turnOn.addEventListener("click", lampOn);
 turnOff.addEventListener("click", lampOff);
 
-lamp.addEventListener("mouse over", lampOn);
-lamp.addEventListener("mouse leave", lampOff);
-lamp.addEventListener("dbclick", lampBroken);
+lamp.addEventListener("mouseover", lampOn);
+lamp.addEventListener("mouseleave", lampOff);
+lamp.addEventListener("ondblclick", lampBroken);
