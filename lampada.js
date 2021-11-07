@@ -48,8 +48,12 @@ function lampBroken2() {
   lamp2.src = "./img/quebrada.jpg";
 }
 
+function changeLamp2() {
+  lamp2.src = "./img/desligada.jpg";
+}
 turnOn2.addEventListener("click", lampOn2);
 turnOff2.addEventListener("click", lampOff2);
+change2.addEventListener("click", changeLamp2);
 lamp2.addEventListener("mouseover", lampOn2);
 lamp2.addEventListener("mouseleave", lampOff2);
 lamp2.addEventListener("dblclick", lampBroken2);
